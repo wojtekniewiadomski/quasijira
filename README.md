@@ -2,7 +2,7 @@
 
 Tested with:
 * OS: VirtualBox VM "bento_ubuntu-22.04" with Ubuntu Linux 5.15.0-160-generic x86_64
-* Laravel framework: v13.17
+* Laravel framework: v13.39.0
 * PHP: v8.4.27
 * MySQL: 8.0.46-0ubuntu0.22.04.4
 * Redis: 6.0.16

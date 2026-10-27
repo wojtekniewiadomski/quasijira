@@ -13,7 +13,7 @@
                         <h1 class="text-base font-semibold leading-6 text-gray-900">{{ __('Projects') }}</h1>
                         <p class="mt-2 text-sm text-gray-700">A list of all the {{ __('Projects') }}.</p>
                     </div>
-                    <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
+                    <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none container-background">
                         <a type="button" wire:navigate href="{{ route('projects.create') }}" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add new</a>
                     </div>
                 </div>

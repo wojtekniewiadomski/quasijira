@@ -17,6 +17,7 @@ return new class extends Migration
             $table->longText('description')->nullable();
             $table->unsignedTinyInteger('status')->default(1);
             $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
         });
 
         Schema::create('project_tasks', function (Blueprint $table) {
