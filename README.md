@@ -1,3 +1,41 @@
+# Instructions from Wojtek Niewiadomski :)
+
+Tested with:
+* OS: VirtualBox VM "bento_ubuntu-22.04" with Ubuntu Linux 5.15.0-160-generic x86_64
+* Laravel framework: v11.57.1
+* PHP: v8.4.27
+* MySQL: 8.0.46-0ubuntu0.22.04.4
+* Redis: 6.0.16
+
+<p>On working machine, in the first step, You must run migrations processing, for creation of the most base DB table</p>
+
+* cache
+* cache_locks
+* failed_jobs
+* job_batches
+* jobs
+* password_reset_tokens
+* sessions
+
+```php
+php artisan migrate
+```
+
+<p>Installing CRUD generator</p>
+
+```php
+composer require ibex/crud-generator --dev
+php artisan vendor:publish --tag=crud
+```
+
+<p>Adding database/migrations/2026_10_27_000001_create_projects_table.php</p>
+<p>Which stack would you like to install: Blade with Bootstrap css</p>
+
+```php
+php artisan make:crud projects
+```
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
