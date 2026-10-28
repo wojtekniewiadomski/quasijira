@@ -27,6 +27,7 @@ return new class extends Migration
             $table->string('description')->nullable();
             $table->mediumText('options')->nullable();
             $table->timestamp('created_at')->nullable();
+            $table->timestamp('updated_at')->nullable();
             $table->timestamp('cancelled_at')->nullable();
             $table->timestamp('finished_at')->nullable();
         });

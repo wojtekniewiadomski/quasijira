@@ -10,14 +10,15 @@ class ProjectForm extends Form
     public ?Project $projectModel;
     
     public $name = '';
-    public $description = '';
     public $status = '';
+    public $description = '';
 
     public function rules(): array
     {
         return [
 			'name' => 'required|string',
 			'status' => 'required',
+            'description' => 'string',
         ];
     }
 

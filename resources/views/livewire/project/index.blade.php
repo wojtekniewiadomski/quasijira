@@ -13,7 +13,7 @@
                         <h1 class="text-base font-semibold leading-6 text-gray-900">{{ __('Projects') }}</h1>
                         <p class="mt-2 text-sm text-gray-700">A list of all the {{ __('Projects') }}.</p>
                     </div>
-                    <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none container-background">
+                    <div class="mt-4 sm:ml-16 sm:mt-0 sm:flex-none">
                         <a type="button" wire:navigate href="{{ route('projects.create') }}" class="block rounded-md bg-indigo-600 px-3 py-2 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Add new</a>
                     </div>
                 </div>
@@ -45,6 +45,7 @@
                                         <td class="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900">
                                             <a wire:navigate href="{{ route('projects.show', $project->id) }}" class="text-gray-600 font-bold hover:text-gray-900 mr-2">{{ __('Show') }}</a>
                                             <a wire:navigate href="{{ route('projects.edit', $project->id) }}" class="text-indigo-600 font-bold hover:text-indigo-900  mr-2">{{ __('Edit') }}</a>
+                                            <a wire:navigate href="{{ route('project-tasks.index', $project->id) }}" class="text-indigo-600 font-bold hover:text-indigo-900  mr-2">{{ __('Open') }}</a>
                                             <button
                                                 class="text-red-600 font-bold hover:text-red-900"
                                                 type="button"
