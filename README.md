@@ -19,8 +19,11 @@ Tested with:
 * password_reset_tokens
 * sessions
 
+<p>Please, run following commands</p>
+
 ```php
 php artisan migrate
+npm run build
 ```
 <p>******************** !!! <b>For authenticate, You must register some account</b> !!! ********************</p>
 
