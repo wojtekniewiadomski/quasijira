@@ -20,20 +20,7 @@ Tested with:
 ```php
 php artisan migrate
 ```
-
-<p>Installing CRUD generator</p>
-
-```php
-composer require ibex/crud-generator --dev
-php artisan vendor:publish --tag=crud
-```
-
-<p>Adding database/migrations/2026_10_27_000001_create_projects_table.php</p>
-<p>Which stack would you like to install: Blade with Bootstrap css</p>
-
-```php
-php artisan make:crud projects
-```
+<p>******************** !!! <b>For authenticate, You must register some account</b> !!! ********************</p>
 
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
