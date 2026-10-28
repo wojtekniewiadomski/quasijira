@@ -6,6 +6,8 @@ Tested with:
 * PHP: v8.4.27
 * MySQL: 8.0.46-0ubuntu0.22.04.4
 * Redis: 6.0.16
+* node: v26.12.1
+* npm: 11.20.0
 
 <p>On working machine, in the first step, You must run migrations processing, for creation of the most base DB table</p>
 
